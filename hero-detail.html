@@ -20,7 +20,7 @@
             }
             const heroImageElement = document.getElementById('hero-image');
             if (heroImageElement) {
-                heroImageElement.src = `https://source.unsplash.com/random/400x400?query=mlbb+hero+${heroName.toLowerCase()}`;
+                heroImageElement.src = `https://source.unsplash.com/random/400x400?query=mlbb+hero+${heroName.toLowerCase()}+portrait`;
                 heroImageElement.alt = heroName;
             }
 
@@ -95,7 +95,7 @@
             <div class="container mx-auto px-4">
                 <div class="max-w-4xl mx-auto hero-detail-section">
                     <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
-                        <img id="hero-image" src="https://source.unsplash.com/random/400x400?query=mlbb+hero+kagura" alt="Hero Name" class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-yellow-500 shadow-lg flex-shrink-0 animate-fade-in-up">
+                        <img id="hero-image" src="https://source.unsplash.com/random/400x400?query=mlbb+hero+kagura+portrait" alt="Kagura" class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-yellow-500 shadow-lg flex-shrink-0 animate-fade-in-up">
                         <div class="text-center md:text-left animate-fade-in-down">
                             <h1 id="hero-name" class="text-5xl md:text-6xl font-extrabold text-white mb-2 drop-shadow-lg">Kagura</h1>
                             <p class="text-xl text-gray-300 mb-4">Büyücü / Destek</p>
@@ -115,26 +115,26 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="card-modern p-5">
                                     <h3 class="text-2xl font-semibold text-yellow-400 mb-3">Yüksek Burst Hasar İnşaası</h3>
-                                    <p class="text-gray-300 mb-4">Tek hedefleri hızla eritmek için en yüksek büyü hasarını veren eşya dizilimi.</p>
+                                    <p class="text-gray-300 mb-4">Rakip taşıyıcıları tek bir kombo ile ortadan kaldırmak için en yüksek büyü hasarını ve büyü nüfuzunu hedefleyen eşya dizilimi.</p>
                                     <div class="flex flex-wrap justify-center md:justify-start gap-3">
-                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+holy+crystal" alt="Item 1" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
-                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+lightning+truncheon" alt="Item 2" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
-                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+divine+glaive" alt="Item 3" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
-                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+magic+shoes" alt="Item 4" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
-                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+genius+wand" alt="Item 5" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
-                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+winter+truncheon" alt="Item 6" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
+                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+magic+shoes+icon" alt="Magic Shoes" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
+                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+lightning+truncheon+icon" alt="Lightning Truncheon" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
+                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+holy+crystal+icon" alt="Holy Crystal" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
+                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+divine+glaive+icon" alt="Divine Glaive" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
+                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+genius+wand+icon" alt="Genius Wand" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
+                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+winter+truncheon+icon" alt="Winter Truncheon" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
                                     </div>
                                 </div>
                                 <div class="card-modern p-5">
                                     <h3 class="text-2xl font-semibold text-yellow-400 mb-3">Cooldown Odaklı İnşa</h3>
-                                    <p class="text-gray-300 mb-4">Yeteneklerinizi daha sık kullanarak sürekli kitle kontrolü ve hasar uygulayın.</p>
+                                    <p class="text-gray-300 mb-4">Yeteneklerinizi sürekli olarak spamlamak ve takım savaşlarında daha fazla kitle kontrolü sağlamak için maksimum bekleme süresi azaltma ve mana yenilenmesi sunar.</p>
                                     <div class="flex flex-wrap justify-center md:justify-start gap-3">
-                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+enchanted+talisman" alt="Item 1" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
-                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+fleeting+time" alt="Item 2" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
-                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+magic+whip" alt="Item 3" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
-                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+oracle" alt="Item 4" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
-                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+demon+shoes" alt="Item 5" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
-                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+glowing+wand" alt="Item 6" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
+                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+demon+shoes+icon" alt="Demon Shoes" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
+                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+enchanted+talisman+icon" alt="Enchanted Talisman" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
+                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+fleeting+time+icon" alt="Fleeting Time" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
+                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+ice+queen+wand+icon" alt="Ice Queen Wand" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
+                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+oracle+icon" alt="Oracle" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
+                                        <img src="https://source.unsplash.com/random/50x50?query=mlbb+item+necklace+of+durance+icon" alt="Necklace of Durance" class="w-12 h-12 rounded-full border-2 border-purple-600 shadow-md object-cover">
                                     </div>
                                 </div>
                             </div>
@@ -144,31 +144,31 @@
                             <h2 class="text-4xl font-bold text-white mb-6 text-center md:text-left">Yetenekler</h2>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="card-modern p-5 flex items-start space-x-4">
-                                    <img src="https://source.unsplash.com/random/60x60?query=mlbb+skill+passive" alt="Passive Skill Icon" class="w-16 h-16 rounded-lg border-2 border-yellow-500 shadow-md object-cover">
+                                    <img src="https://source.unsplash.com/random/60x60?query=mlbb+skill+kagura+passive+icon" alt="Kagura Pasif Yeteneği" class="w-16 h-16 rounded-lg border-2 border-yellow-500 shadow-md object-cover">
                                     <div>
-                                        <h3 class="text-2xl font-semibold text-white mb-1">Pasif: Seimei Payung</h3>
-                                        <p class="text-gray-300">Kagura'nın şemsiyesiyle etkileşime girdiğinde kalkan kazanır ve rakibi yavaşlatır. Şemsiye olmadan %5 daha hızlı hareket eder.</p>
+                                        <h3 class="text-2xl font-semibold text-white mb-1">Pasif: Seimei Umbrella Open</h3>
+                                        <p class="text-gray-300">Kagura, şemsiyesini geri aldığında veya şemsiyeye yaklaştığında 4 saniye boyunca kalkan kazanır ve yakındaki düşmanlara büyü hasarı vererek onları yavaşlatır.</p>
                                     </div>
                                 </div>
                                 <div class="card-modern p-5 flex items-start space-x-4">
-                                    <img src="https://source.unsplash.com/random/60x60?query=mlbb+skill+first" alt="Skill 1 Icon" class="w-16 h-16 rounded-lg border-2 border-yellow-500 shadow-md object-cover">
+                                    <img src="https://source.unsplash.com/random/60x60?query=mlbb+skill+kagura+s1+icon" alt="Kagura 1. Yeteneği" class="w-16 h-16 rounded-lg border-2 border-yellow-500 shadow-md object-cover">
                                     <div>
-                                        <h3 class="text-2xl font-semibold text-white mb-1">1. Yetenek: Seimei Kodu Açma</h3>
-                                        <p class="text-gray-300">Şemsiyesini belirli bir yöne fırlatır, isabet ettiği düşmanlara büyü hasarı verir ve onları yavaşlatır. Şemsiye hareket ettirilebilir.</p>
+                                        <h3 class="text-2xl font-semibold text-white mb-1">1. Yetenek: Seimei Umbrella Fling</h3>
+                                        <p class="text-gray-300">Şemsiyesini belirli bir yöne fırlatır, geçtiği düşmanlara büyü hasarı verir ve yavaşlatır. Şemsiye hedef konumda kalır.</p>
                                     </div>
                                 </div>
                                 <div class="card-modern p-5 flex items-start space-x-4">
-                                    <img src="https://source.unsplash.com/random/60x60?query=mlbb+skill+second" alt="Skill 2 Icon" class="w-16 h-16 rounded-lg border-2 border-yellow-500 shadow-md object-cover">
+                                    <img src="https://source.unsplash.com/random/60x60?query=mlbb+skill+kagura+s2+icon" alt="Kagura 2. Yeteneği" class="w-16 h-16 rounded-lg border-2 border-yellow-500 shadow-md object-cover">
                                     <div>
-                                        <h3 class="text-2xl font-semibold text-white mb-1">2. Yetenek: Şemsiye Flipleri</h3>
-                                        <p class="text-gray-300">Kagura'nın şemsiyesi yanında değilken, şemsiyenin olduğu yere ışınlanır ve yakınındaki düşmanları kitle kontrolü altına alır. Şemsiyesi yanındaysa, şemsiyesini atar, kendi üzerine bir kalkan kazanır ve düşman kitle kontrolünü kaldırır.</p>
+                                        <h3 class="text-2xl font-semibold text-white mb-1">2. Yetenek: Rasho Umbrella Flee</h3>
+                                        <p class="text-gray-300">Şemsiyesi yanında değilken, Kagura şemsiyesinin olduğu yere ışınlanır ve yakınındaki düşmanları kitle kontrolü altına alır. Şemsiyesi yanındaysa, şemsiyesini atar, kendi üzerine bir kalkan kazanır ve tüm kitle kontrolü etkilerinden kurtulur.</p>
                                     </div>
                                 </div>
                                 <div class="card-modern p-5 flex items-start space-x-4">
-                                    <img src="https://source.unsplash.com/random/60x60?query=mlbb+skill+ultimate" alt="Ultimate Skill Icon" class="w-16 h-16 rounded-lg border-2 border-yellow-500 shadow-md object-cover">
+                                    <img src="https://source.unsplash.com/random/60x60?query=mlbb+skill+kagura+ultimate+icon" alt="Kagura Ulti Yeteneği" class="w-16 h-16 rounded-lg border-2 border-yellow-500 shadow-md object-cover">
                                     <div>
-                                        <h3 class="text-2xl font-semibold text-white mb-1">Ulti: Yin Yang Kapsülü</h3>
-                                        <p class="text-gray-300">Şemsiyesi Kagura'nın yanındaysa, yakınındaki düşmanlara büyü hasarı verir ve onları geri iter. Şemsiye ayrıysa, Kagura şemsiyenin etrafında büyük bir alan oluşturur, düşmanları kendine çeker ve sürekli büyü hasarı verir.</p>
+                                        <h3 class="text-2xl font-semibold text-white mb-1">Ulti: Yin Yang Overturn</h3>
+                                        <p class="text-gray-300">Şemsiyesi Kagura'nın yanındaysa, etrafındaki düşmanlara büyü hasarı verir ve onları geri iter. Şemsiye ayrıysa, şemsiyenin etrafında büyük bir alan oluşturur, düşmanları kendine çeker ve sürekli büyü hasarı verir.</p>
                                     </div>
                                 </div>
                             </div>
@@ -180,17 +180,19 @@
                                 <div class="card-modern p-5">
                                     <h3 class="text-2xl font-semibold text-red-500 mb-3">Kagura'ya Karşı Güçlü Kahramanlar</h3>
                                     <ul class="list-disc list-inside text-gray-300 space-y-2">
-                                        <li><span class="font-medium text-white">Chou:</span> Yüksek ani hasar ve kitle kontrolü ile Kagura'yı kolayca hedef alabilir.</li>
+                                        <li><span class="font-medium text-white">Chou:</span> Yüksek ani hasar, bağışıklık ve kitle kontrolü ile Kagura'yı kolayca hedef alabilir ve ultisinden çıkarabilir.</li>
                                         <li><span class="font-medium text-white">Natalia:</span> Görünmezliği sayesinde Kagura'nın arkasına geçip hızlıca ortadan kaldırabilir.</li>
-                                        <li><span class="font-medium text-white">Grock:</span> Yüksek direnci ve duvar yeteneği ile Kagura'nın şemsiye oyunlarını bozabilir.</li>
+                                        <li><span class="font-medium text-white">Khufra:</span> Bouncing Ball ve Ultimate yetenekleri ile Kagura'nın hareketliliğini ve ulti pozisyonlamasını tamamen bozar.</li>
+                                        <li><span class="font-medium text-white">Kaja:</span> Uzun menzilli kitle kontrolü ve yakalama yeteneği ile Kagura'yı kolayca kilitleyebilir.</li>
                                     </ul>
                                 </div>
                                 <div class="card-modern p-5">
                                     <h3 class="text-2xl font-semibold text-green-500 mb-3">Kagura'nın Karşı Güçlü Olduğu Kahramanlar</h3>
                                     <ul class="list-disc list-inside text-gray-300 space-y-2">
-                                        <li><span class="font-medium text-white">Cyclops:</span> Kagura'nın kaçma ve kitle kontrolü yetenekleri Cyclops'un sabit hasarını etkisizleştirir.</li>
-                                        <li><span class="font-medium text-white">Eudora:</span> Kagura'nın ani hareket kabiliyeti, Eudora'nın yavaş yeteneklerinden kaçmasını sağlar.</li>
+                                        <li><span class="font-medium text-white">Cyclops:</span> Kagura'nın kaçış yetenekleri Cyclops'un sabit hasarını etkisizleştirir ve ona kolayca yaklaşabilir.</li>
+                                        <li><span class="font-medium text-white">Eudora:</span> Kagura'nın ani hareket kabiliyeti, Eudora'nın yavaş yeteneklerinden ve yüksek ani hasarından kaçmasını sağlar.</li>
                                         <li><span class="font-medium text-white">Layla:</span> Düşük hareketliliğe sahip nişancılara karşı şemsiyesini kullanarak kolayca yaklaşabilir ve onları yakalayabilir.</li>
+                                        <li><span class="font-medium text-white">Pharsa:</span> Şemsiye fırlatma yeteneği ile Pharsa'nın ultisini kesintiye uğratabilir ve kolayca yaklaşabilir.</li>
                                     </ul>
                                 </div>
                             </div>
