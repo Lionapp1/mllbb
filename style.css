@@ -1,11 +1,16 @@
 @keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-20px); }
+    from { opacity: 0; transform: translateY(-30px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
+    from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spinSlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .animate-fade-in-down {
@@ -16,18 +21,24 @@
     animation: fadeInUp 0.8s ease-out forwards;
 }
 
-.btn-gradient {
-    background: linear-gradient(to right, #6D28D9, #9333EA);
+.animate-spin-slow {
+    animation: spinSlow 10s linear infinite;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #8B5CF6, #EC4899);
     color: white;
     position: relative;
     overflow: hidden;
+    transition: all 0.4s ease;
 }
 
-.btn-gradient:hover {
-    background: linear-gradient(to right, #7C3AED, #A78BFA);
+.btn-primary:hover {
+    background: linear-gradient(to right, #7C3AED, #F472B6);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
 }
 
-.btn-gradient::before {
+.btn-primary::before {
     content: '';
     position: absolute;
     top: 0;
@@ -39,18 +50,92 @@
     transform: skewX(-20deg);
 }
 
-.btn-gradient:hover::before {
+.btn-primary:hover::before {
     left: 100%;
 }
 
-.card-gradient {
-    background: linear-gradient(145deg, #1A202C, #2D3748);
-    border: 1px solid rgba(100, 100, 100, 0.3);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+.nav-link {
+    @apply text-gray-300 hover:text-yellow-500 transition duration-300 ease-in-out font-medium relative;
 }
 
-.hero-card-gradient {
-    background: linear-gradient(145deg, #2D3748, #4A5568);
-    border: 1px solid rgba(120, 120, 120, 0.3);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #FACC15; /* yellow-500 */
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link-active {
+    @apply text-yellow-500 font-bold relative;
+}
+
+.nav-link-active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: #FACC15; /* yellow-500 */
+}
+
+/* Modern Card Style */
+.card-modern {
+    @apply rounded-2xl shadow-2xl p-6 text-center bg-gradient-to-br from-gray-800 to-gray-900 border border-purple-800 backdrop-blur-sm;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-modern:hover {
+    @apply border-yellow-500 shadow-yellow-500/20;
+}
+
+/* Feature Card Style */
+.feature-card {
+    @apply p-6 rounded-2xl bg-gray-800 shadow-xl flex flex-col items-center border border-purple-900;
+}
+
+.feature-card:hover {
+    @apply bg-gray-700 border-yellow-500;
+}
+
+/* Form Inputs */
+.form-input {
+    @apply shadow appearance-none border border-gray-700 rounded-lg w-full py-3 px-4 text-gray-100 leading-tight focus:outline-none focus:ring-2 focus:ring-yellow-500 bg-gray-700 transition duration-200;
+}
+
+.form-input:focus {
+    @apply bg-gray-800;
+}
+
+.form-textarea {
+    @apply shadow appearance-none border border-gray-700 rounded-lg w-full py-3 px-4 text-gray-100 leading-tight focus:outline-none focus:ring-2 focus:ring-yellow-500 bg-gray-700 transition duration-200;
+}
+
+.form-textarea:focus {
+    @apply bg-gray-800;
+}
+
+/* Hero Detail Page specific styles */
+.hero-detail-section {
+    @apply bg-gradient-to-br from-gray-800 to-gray-900 p-6 md:p-8 rounded-2xl shadow-xl border border-purple-800;
+}
+
+.tab-button {
+    @apply px-6 py-3 text-lg font-semibold rounded-t-lg transition duration-200;
+}
+
+.tab-button-active {
+    @apply bg-gradient-to-r from-purple-800 to-indigo-900 text-yellow-400 border-b-2 border-yellow-400;
+}
+
+.tab-button-inactive {
+    @apply bg-gray-800 text-gray-300 hover:text-yellow-400 hover:bg-gray-700;
 }
