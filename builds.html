@@ -8,135 +8,160 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans">
+<body class="bg-gray-950 text-gray-100 font-sans">
 
-    <header class="bg-gradient-to-r from-purple-800 to-indigo-900 shadow-lg py-4 fixed w-full top-0 z-50">
+    <header class="bg-gradient-to-r from-purple-900 to-indigo-950 shadow-lg py-4 fixed w-full top-0 z-50 border-b border-purple-700">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="./index.html" class="text-3xl font-bold text-white tracking-wide flex items-center">
-                <i class="fa-solid fa-crown mr-2 text-yellow-400"></i> MLBB Builds Pro
+            <a href="./index.html" class="text-3xl font-bold text-white tracking-wide flex items-center group">
+                <i class="fa-solid fa-crown mr-2 text-yellow-500 group-hover:animate-spin-slow"></i> MLBB Builds Pro
             </a>
             <nav class="hidden md:flex space-x-6">
-                <a href="./index.html" class="text-white hover:text-yellow-400 transition duration-300 ease-in-out font-medium">Anasayfa</a>
-                <a href="./heroes.html" class="text-white hover:text-yellow-400 transition duration-300 ease-in-out font-medium">Kahramanlar</a>
-                <a href="./builds.html" class="text-yellow-400 hover:text-yellow-400 transition duration-300 ease-in-out font-medium">İnşaalar</a>
-                <a href="./guides.html" class="text-white hover:text-yellow-400 transition duration-300 ease-in-out font-medium">Rehberler</a>
-                <a href="./contact.html" class="text-white hover:text-yellow-400 transition duration-300 ease-in-out font-medium">İletişim</a>
+                <a href="./index.html" class="nav-link">Anasayfa</a>
+                <a href="./heroes.html" class="nav-link">Kahramanlar</a>
+                <a href="./builds.html" class="nav-link-active">İnşaalar</a>
+                <a href="./guides.html" class="nav-link">Rehberler</a>
+                <a href="./contact.html" class="nav-link">İletişim</a>
             </nav>
-            <button id="mobile-menu-button" class="md:hidden text-white text-2xl focus:outline-none">
+            <button id="mobile-menu-button" class="md:hidden text-white text-2xl focus:outline-none focus:ring-2 focus:ring-yellow-400 rounded p-1">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
-        <div id="mobile-menu" class="md:hidden bg-indigo-900 pt-2 pb-4 hidden">
+        <div id="mobile-menu" class="md:hidden bg-indigo-950 pt-2 pb-4 hidden border-t border-purple-800">
             <nav class="flex flex-col items-center space-y-3">
-                <a href="./index.html" class="block text-white hover:text-yellow-400 py-2 w-full text-center">Anasayfa</a>
-                <a href="./heroes.html" class="block text-white hover:text-yellow-400 py-2 w-full text-center">Kahramanlar</a>
-                <a href="./builds.html" class="block text-yellow-400 hover:text-yellow-400 py-2 w-full text-center">İnşaalar</a>
-                <a href="./guides.html" class="block text-white hover:text-yellow-400 py-2 w-full text-center">Rehberler</a>
-                <a href="./contact.html" class="block text-white hover:text-yellow-400 py-2 w-full text-center">İletişim</a>
+                <a href="./index.html" class="block text-white hover:text-yellow-400 py-2 w-full text-center text-lg font-medium">Anasayfa</a>
+                <a href="./heroes.html" class="block text-white hover:text-yellow-400 py-2 w-full text-center text-lg font-medium">Kahramanlar</a>
+                <a href="./builds.html" class="block text-yellow-400 hover:text-yellow-400 py-2 w-full text-center text-lg font-medium">İnşaalar</a>
+                <a href="./guides.html" class="block text-white hover:text-yellow-400 py-2 w-full text-center text-lg font-medium">Rehberler</a>
+                <a href="./contact.html" class="block text-white hover:text-yellow-400 py-2 w-full text-center text-lg font-medium">İletişim</a>
             </nav>
         </div>
     </header>
 
     <main class="pt-20">
-        <section class="py-16 bg-gray-900">
+        <section class="py-16 bg-gray-950">
             <div class="container mx-auto px-4">
-                <h1 class="text-5xl font-extrabold text-center text-white mb-12 animate-fade-in-down">Kahraman İnşaalarını Keşfet</h1>
-                <p class="text-xl text-center text-gray-300 mb-10 max-w-3xl mx-auto">En sevdiğiniz Mobile Legends kahramanları için en uygun eşya setlerini, amblemleri ve büyüleri bulun.</p>
+                <h1 class="text-5xl md:text-6xl font-extrabold text-center text-white mb-12 animate-fade-in-down drop-shadow-lg leading-tight">
+                    <span class="text-yellow-500">Kahraman</span> İnşaalarını Keşfet
+                </h1>
+                <p class="text-xl text-center text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">En sevdiğiniz Mobile Legends kahramanları için en uygun eşya setlerini, amblemleri ve büyüleri bulun ve arenada hükmedin.</p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Build Card 1 -->
-                    <div class="card-gradient rounded-xl shadow-2xl p-6 text-center transform hover:scale-105 transition duration-300 ease-in-out">
-                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+marksman" alt="Hero Image" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-400 shadow-md">
+                    <div class="card-modern transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+marksman+build" alt="Hero Image" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-500 shadow-lg object-cover">
                         <h3 class="text-2xl font-bold text-white mb-2">Nişancı Kritik İnşaası</h3>
                         <p class="text-gray-300 mb-4">Yüksek kritik hasar ve saldırı hızıyla oyun sonunu domine edin.</p>
                         <div class="flex justify-center space-x-2 mb-4">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+crit" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+atkspd" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+lifesteal" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+crit+blade" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+atkspd+bow" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+lifesteal+axe" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
                         </div>
-                        <a href="#" class="text-yellow-400 hover:underline font-semibold">Detayları Görüntüle <i class="fas fa-arrow-right ml-1"></i></a>
+                        <a href="./hero-detail.html?hero=Wanwan&tab=builds" class="text-yellow-500 hover:text-yellow-400 hover:underline font-semibold flex items-center justify-center">Detayları Görüntüle <i class="fas fa-arrow-right ml-2"></i></a>
                     </div>
 
                     <!-- Build Card 2 -->
-                    <div class="card-gradient rounded-xl shadow-2xl p-6 text-center transform hover:scale-105 transition duration-300 ease-in-out">
-                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+tank" alt="Hero Image" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-400 shadow-md">
+                    <div class="card-modern transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+tank+build" alt="Hero Image" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-500 shadow-lg object-cover">
                         <h3 class="text-2xl font-bold text-white mb-2">Tank Savunma İnşaası</h3>
                         <p class="text-gray-300 mb-4">Taşıyıcılarınızı koruyan, öldürülemez bir öncü olun.</p>
                         <div class="flex justify-center space-x-2 mb-4">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+armor" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+magicres" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+hp" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+armor+shield" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+magicres+cloak" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+hp+crystal" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
                         </div>
-                        <a href="#" class="text-yellow-400 hover:underline font-semibold">Detayları Görüntüle <i class="fas fa-arrow-right ml-1"></i></a>
+                        <a href="./hero-detail.html?hero=Atlas&tab=builds" class="text-yellow-500 hover:text-yellow-400 hover:underline font-semibold flex items-center justify-center">Detayları Görüntüle <i class="fas fa-arrow-right ml-2"></i></a>
                     </div>
 
                     <!-- Build Card 3 -->
-                    <div class="card-gradient rounded-xl shadow-2xl p-6 text-center transform hover:scale-105 transition duration-300 ease-in-out">
-                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+mage+utility" alt="Hero Image" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-400 shadow-md">
+                    <div class="card-modern transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+mage+utility+build" alt="Hero Image" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-500 shadow-lg object-cover">
                         <h3 class="text-2xl font-bold text-white mb-2">Büyücü Destek İnşaası</h3>
                         <p class="text-gray-300 mb-4">Yüksek hasarla kritik kitle kontrolü ve takım desteği sağlayın.</p>
                         <div class="flex justify-center space-x-2 mb-4">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+cooldown" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+magicpen" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+utility" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+cooldown+book" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+magicpen+rod" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+utility+orb" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
                         </div>
-                        <a href="#" class="text-yellow-400 hover:underline font-semibold">Detayları Görüntüle <i class="fas fa-arrow-right ml-1"></i></a>
+                        <a href="./hero-detail.html?hero=Kagura&tab=builds" class="text-yellow-500 hover:text-yellow-400 hover:underline font-semibold flex items-center justify-center">Detayları Görüntüle <i class="fas fa-arrow-right ml-2"></i></a>
                     </div>
 
                     <!-- Build Card 4 -->
-                    <div class="card-gradient rounded-xl shadow-2xl p-6 text-center transform hover:scale-105 transition duration-300 ease-in-out">
-                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+fighter+sustain" alt="Hero Image" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-400 shadow-md">
+                    <div class="card-modern transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+fighter+sustain+build" alt="Hero Image" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-500 shadow-lg object-cover">
                         <h3 class="text-2xl font-bold text-white mb-2">Savaşçı Sürdürme İnşaası</h3>
                         <p class="text-gray-300 mb-4">Güçlü yenilenme ve dayanıklılıkla rakiplerinizden daha uzun süre ayakta kalın.</p>
                         <div class="flex justify-center space-x-2 mb-4">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+lifesteal" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+defense" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+sustain" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+lifesteal+sword" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+defense+helmet" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+sustain+gem" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
                         </div>
-                        <a href="#" class="text-yellow-400 hover:underline font-semibold">Detayları Görüntüle <i class="fas fa-arrow-right ml-1"></i></a>
+                        <a href="./hero-detail.html?hero=Chou&tab=builds" class="text-yellow-500 hover:text-yellow-400 hover:underline font-semibold flex items-center justify-center">Detayları Görüntüle <i class="fas fa-arrow-right ml-2"></i></a>
                     </div>
 
                     <!-- Build Card 5 -->
-                    <div class="card-gradient rounded-xl shadow-2xl p-6 text-center transform hover:scale-105 transition duration-300 ease-in-out">
-                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+assassin+gank" alt="Hero Image" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-400 shadow-md">
+                    <div class="card-modern transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+assassin+gank+build" alt="Hero Image" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-500 shadow-lg object-cover">
                         <h3 class="text-2xl font-bold text-white mb-2">Suikastçı Baskın İnşaası</h3>
                         <p class="text-gray-300 mb-4">Hızlı hedef avlama ve koridor hakimiyeti için yüksek hareketlilik ve yüksek hasar.</p>
                         <div class="flex justify-center space-x-2 mb-4">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+movement" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+physical" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+crit" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+movement+boots" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+physical+dagger" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+crit+glove" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
                         </div>
-                        <a href="#" class="text-yellow-400 hover:underline font-semibold">Detayları Görüntüle <i class="fas fa-arrow-right ml-1"></i></a>
+                        <a href="./hero-detail.html?hero=Lancelot&tab=builds" class="text-yellow-500 hover:text-yellow-400 hover:underline font-semibold flex items-center justify-center">Detayları Görüntüle <i class="fas fa-arrow-right ml-2"></i></a>
                     </div>
 
                     <!-- Build Card 6 -->
-                    <div class="card-gradient rounded-xl shadow-2xl p-6 text-center transform hover:scale-105 transition duration-300 ease-in-out">
-                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+support+heal" alt="Hero Image" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-400 shadow-md">
+                    <div class="card-modern transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+support+heal+build" alt="Hero Image" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-500 shadow-lg object-cover">
                         <h3 class="text-2xl font-bold text-white mb-2">Destek İyileştirme İnşaası</h3>
                         <p class="text-gray-300 mb-4">Güçlü iyileştirmeler ve kalkanlarla takımınızı hayatta ve iyi tutun.</p>
                         <div class="flex justify-center space-x-2 mb-4">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+support" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+heal" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
-                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+mana_regen" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+support+orb" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+heal+wand" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+mana_regen+ring" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
                         </div>
-                        <a href="#" class="text-yellow-400 hover:underline font-semibold">Detayları Görüntüle <i class="fas fa-arrow-right ml-1"></i></a>
+                        <a href="./hero-detail.html?hero=Floryn&tab=builds" class="text-yellow-500 hover:text-yellow-400 hover:underline font-semibold flex items-center justify-center">Detayları Görüntüle <i class="fas fa-arrow-right ml-2"></i></a>
                     </div>
 
-                    <!-- Add more build cards here -->
+                    <!-- Added more build cards for completeness -->
+                    <div class="card-modern transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+marksman+burst+build" alt="Hero Image" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-500 shadow-lg object-cover">
+                        <h3 class="text-2xl font-bold text-white mb-2">Nişancı Ani Hasar İnşaası</h3>
+                        <p class="text-gray-300 mb-4">Tek hedeflere yüksek ani hasar vererek rakipleri hızla yok edin.</p>
+                        <div class="flex justify-center space-x-2 mb-4">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+burst+bow" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+physical+atk" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+true_damage" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                        </div>
+                        <a href="./hero-detail.html?hero=Beatrix&tab=builds" class="text-yellow-500 hover:text-yellow-400 hover:underline font-semibold flex items-center justify-center">Detayları Görüntüle <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+
+                    <div class="card-modern transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+mage+roam+build" alt="Hero Image" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-yellow-500 shadow-lg object-cover">
+                        <h3 class="text-2xl font-bold text-white mb-2">Büyücü Gezgin İnşaası</h3>
+                        <p class="text-gray-300 mb-4">Koridorlar arasında hızlı hareket ederek erken oyun baskısını artırın.</p>
+                        <div class="flex justify-center space-x-2 mb-4">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+movement+boots+magic" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+roam+active" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+magic+dmg" alt="Item" class="w-10 h-10 rounded-full border border-gray-600 shadow-md">
+                        </div>
+                        <a href="./hero-detail.html?hero=Yve&tab=builds" class="text-yellow-500 hover:text-yellow-400 hover:underline font-semibold flex items-center justify-center">Detayları Görüntüle <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-gradient-to-r from-purple-800 to-indigo-900 py-8 mt-16">
+    <footer class="bg-gradient-to-r from-purple-900 to-indigo-950 py-8 mt-16 border-t border-purple-700">
         <div class="container mx-auto px-4 text-center">
             <div class="flex justify-center space-x-6 mb-6">
-                <a href="#" class="text-gray-300 hover:text-yellow-400 text-2xl transition duration-300 ease-in-out"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-gray-300 hover:text-yellow-400 text-2xl transition duration-300 ease-in-out"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-gray-300 hover:text-yellow-400 text-2xl transition duration-300 ease-in-out"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-gray-300 hover:text-yellow-400 text-2xl transition duration-300 ease-in-out"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-gray-400 hover:text-yellow-500 text-3xl transition duration-300 ease-in-out transform hover:scale-110"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-yellow-500 text-3xl transition duration-300 ease-in-out transform hover:scale-110"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-yellow-500 text-3xl transition duration-300 ease-in-out transform hover:scale-110"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-yellow-500 text-3xl transition duration-300 ease-in-out transform hover:scale-110"><i class="fab fa-youtube"></i></a>
             </div>
-            <p class="text-gray-300 text-sm">&copy; 2023 MLBB Builds Pro. Tüm hakları saklıdır. Mobile Legends: Bang Bang, Moonton'ın ticari markasıdır.</p>
+            <p class="text-gray-400 text-sm">&copy; 2023 MLBB Builds Pro. Tüm hakları saklıdır. Mobile Legends: Bang Bang, Moonton'ın ticari markasıdır.</p>
         </div>
     </footer>
 
