@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLBB Builds Pro - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+    <header class="bg-gradient-to-r from-purple-800 to-indigo-900 shadow-lg py-4 fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="./index.html" class="text-3xl font-bold text-white tracking-wide flex items-center">
+                <i class="fa-solid fa-crown mr-2 text-yellow-400"></i> MLBB Builds Pro
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="./index.html" class="text-white hover:text-yellow-400 transition duration-300 ease-in-out font-medium">Home</a>
+                <a href="./heroes.html" class="text-white hover:text-yellow-400 transition duration-300 ease-in-out font-medium">Heroes</a>
+                <a href="./builds.html" class="text-white hover:text-yellow-400 transition duration-300 ease-in-out font-medium">Builds</a>
+                <a href="./guides.html" class="text-white hover:text-yellow-400 transition duration-300 ease-in-out font-medium">Guides</a>
+                <a href="./contact.html" class="text-white hover:text-yellow-400 transition duration-300 ease-in-out font-medium">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden bg-indigo-900 pt-2 pb-4 hidden">
+            <nav class="flex flex-col items-center space-y-3">
+                <a href="./index.html" class="block text-white hover:text-yellow-400 py-2 w-full text-center">Home</a>
+                <a href="./heroes.html" class="block text-white hover:text-yellow-400 py-2 w-full text-center">Heroes</a>
+                <a href="./builds.html" class="block text-white hover:text-yellow-400 py-2 w-full text-center">Builds</a>
+                <a href="./guides.html" class="block text-white hover:text-yellow-400 py-2 w-full text-center">Guides</a>
+                <a href="./contact.html" class="block text-white hover:text-yellow-400 py-2 w-full text-center">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section class="hero bg-cover bg-center h-[500px] flex items-center justify-center text-center" style="background-image: url('https://source.unsplash.com/random/1600x900?query=mobile+legends+wallpaper');">
+            <div class="bg-black bg-opacity-60 p-8 rounded-lg max-w-2xl mx-auto shadow-2xl animate-fade-in-up">
+                <h1 class="text-5xl font-extrabold text-white mb-4 leading-tight">Master Your Game, Dominate the Rift!</h1>
+                <p class="text-xl text-gray-200 mb-8">Discover the best builds, strategies, and guides for every Mobile Legends: Bang Bang hero.</p>
+                <a href="./heroes.html" class="btn-gradient px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:scale-105 transform transition duration-300 ease-in-out">
+                    Explore Heroes <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-900">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-extrabold text-center text-white mb-12 animate-fade-in-down">Featured Builds</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Build Card 1 -->
+                    <div class="card-gradient rounded-xl shadow-2xl p-6 text-center transform hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+fighter" alt="Hero Image" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-400 shadow-md">
+                        <h3 class="text-2xl font-bold text-white mb-2">Fighter Burst Build</h3>
+                        <p class="text-gray-300 mb-4">Unleash devastating damage with this aggressive fighter setup.</p>
+                        <div class="flex justify-center space-x-2 mb-4">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+damage" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+penetration" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+defense" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                        </div>
+                        <a href="./builds.html" class="text-yellow-400 hover:underline font-semibold">View Build <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+
+                    <!-- Build Card 2 -->
+                    <div class="card-gradient rounded-xl shadow-2xl p-6 text-center transform hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+mage" alt="Hero Image" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-400 shadow-md">
+                        <h3 class="text-2xl font-bold text-white mb-2">Mage Control Build</h3>
+                        <p class="text-gray-300 mb-4">Maximize crowd control and area-of-effect damage with this mage build.</p>
+                        <div class="flex justify-center space-x-2 mb-4">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+magic" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+mana" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+cooldown" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                        </div>
+                        <a href="./builds.html" class="text-yellow-400 hover:underline font-semibold">View Build <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+
+                    <!-- Build Card 3 -->
+                    <div class="card-gradient rounded-xl shadow-2xl p-6 text-center transform hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="https://source.unsplash.com/random/300x300?query=mlbb+hero+assassin" alt="Hero Image" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-yellow-400 shadow-md">
+                        <h3 class="text-2xl font-bold text-white mb-2">Assassin Roam Build</h3>
+                        <p class="text-gray-300 mb-4">Swift ganks and high mobility to snowball your team to victory.</p>
+                        <div class="flex justify-center space-x-2 mb-4">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+boots" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+physical" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                            <img src="https://source.unsplash.com/random/40x40?query=mlbb+item+crit" alt="Item" class="w-10 h-10 rounded-full border border-gray-600">
+                        </div>
+                        <a href="./builds.html" class="text-yellow-400 hover:underline font-semibold">View Build <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-800">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-extrabold text-white mb-6 animate-fade-in-down">Why Choose MLBB Builds Pro?</h2>
+                <p class="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">We provide up-to-date, meta-defining builds and strategies to help you climb the ranks and master every hero.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 rounded-xl bg-gray-700 shadow-xl flex flex-col items-center transform hover:scale-105 transition duration-300 ease-in-out">
+                        <i class="fas fa-chart-line text-5xl text-yellow-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-white mb-2">Meta Builds</h3>
+                        <p class="text-gray-300">Stay ahead with the latest meta-builds, updated regularly by high-rank players.</p>
+                    </div>
+                    <div class="p-6 rounded-xl bg-gray-700 shadow-xl flex flex-col items-center transform hover:scale-105 transition duration-300 ease-in-out">
+                        <i class="fas fa-book-open text-5xl text-yellow-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-white mb-2">In-depth Guides</h3>
+                        <p class="text-gray-300">Learn hero mechanics, lane strategies, and team fight tactics.</p>
+                    </div>
+                    <div class="p-6 rounded-xl bg-gray-700 shadow-xl flex flex-col items-center transform hover:scale-105 transition duration-300 ease-in-out">
+                        <i class="fas fa-users text-5xl text-yellow-400 mb-4"></i>
+                        <h3 class="text-2xl font-bold text-white mb-2">Community Driven</h3>
+                        <p class="text-gray-300">Join a community of passionate players and share your insights.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-r from-purple-800 to-indigo-900 py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-gray-300 hover:text-yellow-400 text-2xl transition duration-300 ease-in-out"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-300 hover:text-yellow-400 text-2xl transition duration-300 ease-in-out"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-300 hover:text-yellow-400 text-2xl transition duration-300 ease-in-out"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-300 hover:text-yellow-400 text-2xl transition duration-300 ease-in-out"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="text-gray-300 text-sm">&copy; 2023 MLBB Builds Pro. All rights reserved. Mobile Legends: Bang Bang is a trademark of Moonton.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>
