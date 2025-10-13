@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (event) => {
             event.preventDefault(); // Prevent actual form submission
-            alert('Message sent successfully! (This is a demo, no actual email was sent.)');
+            alert('Mesaj başarıyla gönderildi! (Bu bir demondur, gerçek bir e-posta gönderilmemiştir.)');
             contactForm.reset();
         });
     }
